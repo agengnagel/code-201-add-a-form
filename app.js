@@ -111,7 +111,7 @@ function handleStoreSubmit(event) {
   console.log(event);
   event.preventDefault();
 
-  if (!event.target.store.value || !event.target.min.value|| !event.target.max.value|| !event.target.avg.value) {
+  if (!event.target.createname.value || !event.target.createminCustomer.value|| !event.target.createmaxCustomer.value|| !event.target.createavgCustomer.value) {
     return alert('Fields cannot be empty!');
   }
 
@@ -129,8 +129,6 @@ function handleStoreSubmit(event) {
 
   allStores.push(newCreateShop);
 };
-
-
 
 
 storeForm.addEventListener('submit', handleStoreSubmit);
